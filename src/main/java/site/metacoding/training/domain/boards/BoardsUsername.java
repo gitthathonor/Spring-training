@@ -1,17 +1,14 @@
 package site.metacoding.training.domain.boards;
 
-import java.sql.Timestamp;
-
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-
 @Getter
 @Setter
-public class Boards {
+@AllArgsConstructor
+public class BoardsUsername {
 	private Integer id;
 	private String title;
-	private String content;
-	private Integer usersId;
-	private Timestamp createdAt;
+	private String username;
 }
